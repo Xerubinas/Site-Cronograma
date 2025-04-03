@@ -15,6 +15,7 @@
         justify-content: center; /* Centraliza horizontalmente */
         gap: 1px; /* Espaçamento entre os elementos */
         width: 100%;
+        height: 100%;
     }
 .header-bg {
         display: flex;
@@ -205,6 +206,7 @@ th {
         justify-content: center; /* Centraliza horizontalmente */
         gap: 1px; /* Espaçamento entre os elementos */
         width: 100%;
+        height: 80px;
         
     }
 .pagina-inicial .container-cabecalho{
@@ -212,7 +214,7 @@ th {
         align-items: center; /* Centraliza verticalmente */
         justify-content: center; /* Centraliza horizontalmente */
         gap: 1px; /* Espaçamento entre os elementos */
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
 }
 .header-bg {
@@ -226,22 +228,21 @@ th {
 .logo { 
         max-width: 400px;
         width: 100%;
-        height: auto; /* Ajuste a altura conforme necessário */
+        height: 100%;
         background-image: url('logo cetep 2.jpg');
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         justify-content: space-between;
         z-index: 1000; /* Garante que fique sobre outros elementos */
-        display: flex;
         align-items: center;
         margin: 0 auto; /* Centraliza no meio da tela */
     }
 
 .logo img {
         width: 100%; /* Faz a imagem ocupar todo o espaço disponível */
-        height: auto; /* Mantém a proporção da imagem */
-    }
+        height: 100%; /* Mantém a proporção da imagem */
+}
     /* Container das barras */
 .barras-direita, .barras-esquerda {
             display: flex;
