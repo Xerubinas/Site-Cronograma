@@ -240,8 +240,17 @@ th {
     }
 
 .logo img {
-        width: 100%; /* Faz a imagem ocupar todo o espaço disponível */
-        height: 100%; /* Mantém a proporção da imagem */
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo cetep 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    z-index: 1000; /* Garante que fique sobre outros elementos */
+    align-items: center;
+    margin: 0 auto; /* Centraliza no meio da tela */
 }
     /* Container das barras */
 .barras-direita, .barras-esquerda {
