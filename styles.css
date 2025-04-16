@@ -1,0 +1,346 @@
+.titulo-cronograma {
+    background-color: rgb(0, 71, 163); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o texto */
+    width: fit-content; /* Faz o container ficar do tamanho do texto */
+    margin: 20px auto; /* Centraliza o título na página */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    }
+.container-cabecalho { 
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 1px; /* Espaçamento entre os elementos */
+        width: 100%;
+        height: 100%;
+    }
+.header-bg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 1px; /* Ajuste conforme necessário */
+        padding: 0 20px;
+    }
+.logo img{ 
+        width: 100%;
+        height: 200px; /* Ajuste a altura conforme necessário */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        z-index: 1000; /* Garante que fique sobre outros elementos */
+    }
+.logo-index {
+        width: 100%;
+        height: 200px; /* Ajuste a altura conforme necessário */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        z-index: 1000; /* Garante que fique sobre outros elementos */
+        
+}
+    /* Container das barras */
+.barras-direita, .barras-esquerda {
+            display: flex;
+            flex-direction: column;
+            gap: 45px; /* Espaçamento entre as barras */
+        }
+     /* Estiliza cada barra */
+.barra {
+            width: 300px; /* Largura da barra */
+            height: 35px; /* Altura da barra */
+            background-color: rgb(146, 0, 0); /* Cor das barras */
+    }
+    
+body {
+        flex-direction: column; /* Empilha os elementos */
+        justify-content: flex-start;
+        padding-top: 0px; /* Evita que o conteúdo fique escondido atrás do cabeçalho */
+    }
+
+.botoes {
+    background-color:rgb(212, 38, 38);
+    color: rgb(255, 255, 255);
+    padding: auto;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    min-width: 100px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.titulo-container-botoes{
+    background-color: rgb(0, 71, 163); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    padding-top: 19px;
+    width: fit-content; /* Faz o container ficar do tamanho do texto */
+    margin: 20px auto; /* Centraliza o título na página */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+.container-botoes1{
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza os containers no eixo horizontal */
+    align-items: stretch; /* Centraliza no eixo vertical */
+    gap: 20px; /* Espaçamento entre os containers */
+    width:100vw;
+    height: 60vh; /* Faz o container ocupar toda a altura da tela */
+}
+.container-botoes2{
+    width: 300px; /* Define a largura do container */
+    height: 800px;
+    display: flex;
+    flex-direction: column; /* Empilha as tabelas verticalmente */
+    justify-content: flex-start;
+    align-items: center; /* Centraliza no eixo horizontal */
+    gap: 20px; 
+    background:rgb(245, 242, 242);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+.container {
+        display: flex;
+        flex-direction: column; /* Empilha as tabelas verticalmente */
+        justify-content: center;
+        align-items: center; /* Centraliza no eixo horizontal */
+        gap: 20px; /* Espaço entre as tabelas */
+        margin-top: 20px auto;
+        margin-left: 10px;
+        background:rgb(245, 242, 242);
+        padding: 2px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+        overflow-y: auto;
+        vertical-align: middle;
+    }
+table {
+        width: 70%; /*aqui se altera o tamanho da tabela */
+        border-collapse: collapse;
+        margin-bottom: 15px; 
+        
+    }
+th, td {
+        border: 1px solid #3b3b3b;
+        padding: 5px;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+th {
+        background-color: #007bff;
+        color: white;
+    }
+.cell-2 {
+        width: 5px;
+        height: 5px;
+            }
+     /* Definindo a célula que vai ter o texto rotacionado */
+     .rotate-text {
+        transform: rotate(-90deg); /* Rotaciona o texto em -90 graus */
+        white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+        height: 10px; /* Defina uma altura apropriada para a célula */
+        width: 5px; /* Defina uma largura apropriada para a célula */
+        text-align: center; /* Centraliza o texto */
+        vertical-align: middle; /* Centraliza o texto verticalmente */
+    }
+.table-wrapper {
+        overflow-x: auto;
+        width: 100%; /* Faz o contêiner ocupar toda a largura disponível */
+        max-width: 100%; /* Limita o tamanho máximo do contêiner */
+        overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+        margin-top: 20px; /* Espaço entre a tabela e a barra de rolagem */
+        min-width: 300px; /* Largura mínima */
+        min-height: 200px; /* Altura mínima */
+    }
+.custom-header {
+        background-color: rgb(0, 71, 163);
+        color: white; /* Texto branco */
+}
+
+@media (max-width: 900px) {
+.titulo-cronograma {
+    background-color: rgb(0, 71, 163); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o texto */
+    width: fit-content; /* Faz o container ficar do tamanho do texto */
+    margin: 30px auto; /* Centraliza o título na página */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    }
+.titulo-container-botoes{
+        background-color: rgb(0, 71, 163); /* Cor de fundo */
+        color: white; /* Cor do texto */
+        padding: 20px 20px; /* Espaçamento interno */
+        border-radius: 10px; /* Cantos arredondados */
+        text-align: center; /* Centraliza o texto */
+        position: relative;
+        padding-top: 19px;
+        width: fit-content; /* Faz o container ficar do tamanho do texto */
+        margin: 20px auto; /* Centraliza o título na página */
+        font-size: 20px; /* Tamanho do texto */
+        font-weight: bold; /* Deixa o texto em negrito */
+        margin-bottom: 20px;
+        margin-top: 10px;
+    
+}
+.container-cabecalho { 
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 1px; /* Espaçamento entre os elementos */
+        width: 100%;
+        height: 80px;
+        
+    }
+.pagina-inicial .container-cabecalho{
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 1px; /* Espaçamento entre os elementos */
+        width: 80%;
+        margin: 0 auto;
+}
+.header-bg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 0px; /* Ajuste conforme necessário */
+        padding: 0 20px;
+    }
+.logo { 
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+        background-image: url('logo cetep 2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        z-index: 1000; /* Garante que fique sobre outros elementos */
+        align-items: center;
+        margin: 0 auto; /* Centraliza no meio da tela */
+    }
+
+.logo img {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    background-image: url('logo cetep 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    z-index: 1000; /* Garante que fique sobre outros elementos */
+    align-items: center;
+    margin: 0 auto; /* Centraliza no meio da tela */
+}
+    /* Container das barras */
+.barras-direita, .barras-esquerda {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Espaçamento entre as barras */
+            
+        }
+     /* Estiliza cada barra */
+.barra {
+            width: 90px; /* Largura da barra */
+            height: 20px; /* Altura da barra */
+            background-color: rgb(146, 0, 0); /* Cor das barras */
+    }
+    
+body {
+        flex-direction: column; /* Empilha os elementos */
+        justify-content: flex-start;
+        padding-top: 0px;
+        padding-top: 0px; /* Evita que o conteúdo fique escondido atrás do cabeçalho */
+    }
+.container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column; /* Empilha as tabelas verticalmente */
+        align-items: center; /* Centraliza no eixo horizontal */
+        gap: 15px; /* Espaço entre as tabelas */
+        margin: 5px auto;
+        background: rgb(226, 226, 226);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 90%;
+        margin: 2vh 5vw;
+        overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+        overflow-y: auto;
+    }
+table {
+        max-width: 315px; /*aqui se altera o tamanho da tabela */
+        max-height: 315px;
+        width: 100%; /*aqui se altera o tamanho da tabela */
+        border-collapse: collapse;
+        margin-bottom: 15px; 
+        margin-left: auto;
+        margin-right: auto;
+
+        
+        }
+th, td {
+        border: 1px solid #3b3b3b;
+        padding: 5px;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+th {
+        background-color: #007bff;
+        color: white;
+        font-size: 14px;
+    }
+.cell-2 {
+        width: 5px;
+        height: 5px;
+        font-size: 14px;
+    }
+            }
+     /* Definindo a célula que vai ter o texto rotacionado */
+.rotate-text {
+        transform: rotate(-90deg); /* Rotaciona o texto em -90 graus */
+        white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+        height: 10px; /* Defina uma altura apropriada para a célula */
+        width: 5px; /* Defina uma largura apropriada para a célula */
+        text-align: center; /* Centraliza o texto */
+        vertical-align: middle; /* Centraliza o texto verticalmente */
+    }
+.table-wrapper {
+        overflow-x: auto;
+        width: 100%; /* Faz o contêiner ocupar toda a largura disponível */
+        max-width: 100%; /* Limita o tamanho máximo do contêiner */
+        overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+        margin-top: 20px; /* Espaço entre a tabela e a barra de rolagem */
+        min-width: 300px; /* Largura mínima */
+        min-height: 200px; /* Altura mínima */
+    }
+
