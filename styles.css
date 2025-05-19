@@ -74,8 +74,58 @@ body {
     width: fit-content;
     font-size: 16px;
     font-weight: bold;
-    
+    cursor: pointer; 
 }
+
+.periodo {
+    margin: 30px auto;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .periodo button.periodo-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(146, 0, 0);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .periodo button.periodo-btn:hover {
+    background-color: rgb(172, 1, 1);
+  }
+
+  .turmas {
+    display: none; /* Começa escondido */
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    background: #f9f9f9;
+  }
+
+  .turmas button {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgb(0, 71, 163);
+    cursor: pointer;
+    transition: 0.2s;
+    color: white
+  }
+
+  .turmas button:hover {
+    background-color: rgb(0, 85, 197);
+  }
+
+
 .titulo-container-botoes{
     background-color: rgb(0, 71, 163); /* Cor de fundo */
     color: white; /* Cor do texto */

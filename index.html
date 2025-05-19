@@ -19,30 +19,32 @@
 <body class="pagina-inicial">
     
    <h1 class= "titulo-cronograma"> Escolha sua Turma</h1>
-     <div class="container-botoes1"> 
-       <div class="container-botoes2">
-    <h2 class="titulo-container-botoes">Matutino</h2>
-    <button class="botoes" onclick="redirecionar('tabela_turma_1_AGRO_MAT.html')">1 AGRO</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_1_INFO_MAT.html')">1 INFO </button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_1_NUTRI_MAT.html')">1 NUTRI </button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_1_SEG_TRAB_MAT.html')">1 SEG TRAB</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_2_AGRO_A_MAT.html')">2 AGRO A</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_2_AGRO_B_MAT.html')">2 AGRO B</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_2_AGRO_C_MAT.html')">2 AGRO C</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_2_INFO_MAT.html')">2 INFO</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_2_NUTRI_MAT.html')">2 NUTRI</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_2_SEG_TRAB_MAT.html')">2 SEG TRAB</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_3_AGRO_A_MAT.html')">3 AGRO A</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_3_AGRO_B_MAT.html')">3 AGRO B</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_3_INFO_MAT.html')">3 INFO</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_3_NUTRI_MAT.html')">3 NUTRI</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_3_SEG_TRAB_MAT.html')">3 SEG TRAB</button>
-    <button class="botoes" onclick="redirecionar('tabela_turma_3_EDI_MAT.html')">3 EDIF</button>
+   <div class="periodo">
+    <button class="periodo-btn" onclick="toggleTurmas('matutino')">Matutino</button>
+    <div class="turmas" id="matutino">
+      <button class="botoes" onclick="redirecionar('tabela_turma_1_AGRO_MAT.html')">1 AGRO</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_1_INFO_MAT.html')">1 INFO </button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_1_NUTRI_MAT.html')">1 NUTRI </button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_1_SEG_TRAB_MAT.html')">1 SEG TRAB</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_2_AGRO_A_MAT.html')">2 AGRO A</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_2_AGRO_B_MAT.html')">2 AGRO B</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_2_AGRO_C_MAT.html')">2 AGRO C</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_2_INFO_MAT.html')">2 INFO</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_2_NUTRI_MAT.html')">2 NUTRI</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_2_SEG_TRAB_MAT.html')">2 SEG TRAB</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_3_AGRO_A_MAT.html')">3 AGRO A</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_3_AGRO_B_MAT.html')">3 AGRO B</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_3_INFO_MAT.html')">3 INFO</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_3_NUTRI_MAT.html')">3 NUTRI</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_3_SEG_TRAB_MAT.html')">3 SEG TRAB</button>
+      <button class="botoes" onclick="redirecionar('tabela_turma_3_EDI_MAT.html')">3 EDIF</button>
+    </div>
+  </div>
 
-   </div>
-      <div class="container-botoes2">
-    <h2 class="titulo-container-botoes">Vespertino</h2>
-    <button class="botoes" onclick="redirecionar('tabela_turma_1_AGRO_VESP.html')">1 AGRO</button>
+  <div class="periodo">
+    <button class="periodo-btn" onclick="toggleTurmas('vespertino')">Vespertino</button>
+    <div class="turmas" id="vespertino">
+      <button class="botoes" onclick="redirecionar('tabela_turma_1_AGRO_VESP.html')">1 AGRO</button>
     <button class="botoes" onclick="redirecionar('tabela_turma_1_INFO_VESP.html')">1 INFO </button>
     <button class="botoes" onclick="redirecionar('tabela_turma_1_NUTRI_VESP.html')">1 NUTRI </button>
     <button class="botoes" onclick="redirecionar('tabela_turma_1_SEG_TRAB_VESP.html')">1 SEG TRAB</button>
@@ -54,11 +56,21 @@
     <button class="botoes" onclick="redirecionar('tabela_turma_3_INFO_VESP.html')">3 INFO</button>
     <button class="botoes" onclick="redirecionar('tabela_turma_3_NUTRI_VESP.html')">3 NUTRI</button>
     <button class="botoes" onclick="redirecionar('tabela_turma_3_SEG_TRAB_VESP.html')">3 SEG TRAB</button>
-    
     </div>
+  </div>
+
+  <div class="periodo">
+    <button class="periodo-btn" onclick="toggleTurmas('noturno')">Noturno</button>
+    <div class="turmas" id="noturno">
+    <button class="botoes" onclick="redirecionar('tabela_turma_I_INFO_NOT.html')">I INFO </button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_I_NUTRI_NOT.html')">I NUTRI </button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_I_SEG_TRAB_NOT.html')">I SEG TRAB</button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_II_AGRO_NOT.html')">II AGRO </button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_II_NUTRI_NOT.html')">II NUTRI</button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_II_SEG_TRAB_NOT.html')">II SEG TRAB</button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_III_AGRO_NOT.html')">III AGRO </button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_III_INFO_NOT.html')">III INFO</button>
+    <button class="botoes" onclick="redirecionar('tabela_turma_III_SEG_TRAB_NOT.html')">III SEG TRAB</button>
     </div>
    </body>
 </html>
-
-
-
